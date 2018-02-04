@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Astrostatistics 101</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Astrostatistics Study Group (ASG)</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="program.html">Program</a>
+</li>
+<li>
+  <a href="progress.html">Progress</a>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Astrostatistics 101</h1>
+
+</div>
+
+
+<hr />
+<blockquote>
+<p>Astrostatistics weds the tools of statistics to the needs of astronomers. It focuses on probabilistic modeling of data and quantification of uncertainty. (source: <a href="http://www.astro.cornell.edu/staff/loredo/lsst_issc/proposal.html">LSST-ISSC</a>)</p>
+</blockquote>
+<blockquote>
+<p>Astrostatistics is an area in the broad field of astronomy particularly suited to hobbyists, since many data sets collected by professional instruments are available for public use. Such files can be downloaded freely, and analyzed and processed on standard computers using open source software tools of professional quality. (source: <a href="http://www.astrostatistics.org/home">Astrostatistics.org</a>)</p>
+</blockquote>
+<hr />
+<div id="main-resources" class="section level3">
+<h3>Main Resources:</h3>
+<ul>
+<li><a href="https://asaip.psu.edu/">Center for Astrostatistics</a> and</li>
+<li><p><a href="https://asaip.psu.edu/">Astrostatistics and Astroinformatics Portal</a> at Pennsylvania State University (serving the cross-disciplinary communities of astronomers, statisticians and computer scientists)</p></li>
+<li><p>Book: <a href="http://www.cambridge.org/us/academic/subjects/physics/astronomy-general/modern-statistical-methods-astronomy-r-applications?format=HB&amp;isbn=9780521767279#contentsTabAnchor">Modern Statistical Methods for Astronomy with R Applications</a> (2012)</p></li>
+</ul>
+<hr />
+</div>
+<div id="prospect-for-amateur-astrostatistics" class="section level3">
+<h3>Prospect for Amateur Astrostatistics:</h3>
+<p>From <a href="http://www.astronomy.com/news/2017/12/the-lsst-and-big-data-science">Astronomy.com</a>, December 15, 2017:</p>
+<center>
+<div id="the-lsst-and-big-data-science" class="section level4">
+<h4>The LSST and big data science</h4>
+</div>
+<div id="a-new-kind-of-telescope-will-need-a-new-kind-of-astronomer" class="section level4">
+<h4>A new kind of telescope will need a new kind of astronomer</h4>
+</center>
+<p>“Construction of the <a href="https://www.lsst.org/">Large Synoptic Survey Telescope</a> (LSST) in Chile will be the largest digital instrument ever built for ground-based astronomy and will take pictures fast enough to capture the entire southern sky every three nights.</p>
+<p>The LSST will cement an age where software is as critical to astronomy as the telescope.</p>
+<blockquote>
+<p>The LSST Education and Public Outreach (EPO) program is working to involve classrooms, citizen scientists and the general public as deeply in big data astronomy as they want (or dare) to go.</p>
+</blockquote>
+<p>And, because more people will have ready access to those data, the biggest discoveries may come not only from the professionals, but from dedicated amateurs working at home on their laptops.&quot;</p>
+<hr />
+</div>
+</div>
+
+<center>
+<footer role="contentinfo" id="site-footer">
+<!-- /.bottom-menu -->
+	<p class="copyright">&#169; 2018,
+		powered by <a href="http://www.r-project.org">R</a> + <a href="http://rmarkdown.rstudio.com">RMarkdown</a> + <a href="http://github.com">Github</a>.</p>
+</footer>
+
+</center>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

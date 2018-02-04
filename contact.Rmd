@@ -1,0 +1,26 @@
+---
+title: "Contact"
+---
+
+***
+
+<center>
+<img src="image/emaillogo.png" height="40" width="40">
+AstrostatChicago[at]gmail.com
+
+or 
+
+<a href="https://goo.gl/forms/MwPKxJoe1H5RcKNq2"><img src="image/joinusbutton.png"></a>
+</center>
+
+###Advisor: 
+* ####Kaelen L. Medeiros
+<a href="https://github.com/klmedeiros"><img src="image/GitHub-Mark-120px-plus.png" height="35" width="35"></a> <a href="https://twitter.com/kaelen_medeiros"><img src="image/Twitterlogo.png" height="35" width="35"></a>
+
+
+###Facilitator:
+* ####Caroline K. Williams 
+<a href="https://github.com/ckwms63"><img src="image/GitHub-Mark-120px-plus.png" height="35" width="35"></a> <a href="https://twitter.com/ckwill36"><img src="image/Twitterlogo.png" height="35" width="35"></a>
+
+***
+

@@ -1,0 +1,23 @@
+name: "my-website"
+navbar:
+  title: "Astrostatistics Study Group (ASG)"
+  left:
+#Intro to ASG 
+#    - text: "Background"
+#      href: index.html
+#IAstrostatistics 101     
+    - text: "About"
+      href: about.html
+    - text: "Program"
+      href: program.html
+    - text: "Progress"
+      href: progress.html
+    - text: "Contact"
+      href: Contact.html
+      
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: _footer.html

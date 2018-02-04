@@ -1,0 +1,43 @@
+---
+title: "Program"
+---
+
+***
+
+###Goals:
+
+1. To facilitate R programmers in applying their skills to analyze Astrostatistics data that are publicly available
+
+2. To present the Astrostatistics projects at R-Ladies Chicago meetup
+
+###Program Planning:
+
+1. Introduce the ASG initiative and recruit members to sign up (minimum of a 3 people required)
+
+2. Check the lists of Astrostatistics projects and data:
+     + [List of projects](http://www.astrostatistics.org/projects) (from solar activity, galaxy redshift to exoplanets)
+     + [Data list](http://astrostatistics.psu.edu/MSMA/datasets/index.html) for Astrostatistics projects 
+     + Data list for Exoplanets from [Caltech](https://exoplanetarchive.ipac.caltech.edu), [Open Exoplanet Catalogue](http://www.openexoplanetcatalogue.com/systems/), [exoplanet.eu](http://exoplanet.eu/catalog/), [exoplanets.org](http://exoplanet.eu/catalog/) 
+     + List of [CRAN packages](https://asaip.psu.edu/resources/cran-packages-in-r-for-astronomy) in R for Astronomy
+     + [VOStat](http://astrostatistics.psu.edu:8080/vostat/step1.html): a simple statistical web-service that lets you analyse your data without the hassle of downloading or installing any software
+
+
+3. Start a project, finish it in 2-3 months period, and present the result at R-Ladies Chicago meetup
+
+4. Collaborate (in the form of study group/mentoring/sponsporship) with:
+     + [Open NASA](https://open.nasa.gov/)
+     + Adler Planetarium, Chicago
+     + Society of Physics/Astronomy Students in Chicago
+
+
+5. Join Astrostatistics communities:
+     + [Astrostatistics on Facebook](https://www.facebook.com/groups/astro.r/)
+     + [AstroInformatics on Facebook](https://www.facebook.com/AstroInformatics)
+
+
+
+6. Attend conferences:
+     + [International Astrostatistics Association meetings and events](http://iaa.mi.oa-brera.inaf.it/adm_program/modules/dates/dates.php)
+     + [Statistical Challenges in 21st Century Cosmology](http://cosmo21.cosmostat.org/)
+
+***

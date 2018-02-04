@@ -1,0 +1,42 @@
+---
+title: "Astrostatistics 101"
+---
+
+***
+
+> Astrostatistics weds the tools of statistics to the needs of astronomers. It focuses on probabilistic modeling of data and quantification of uncertainty. (source: [LSST-ISSC](http://www.astro.cornell.edu/staff/loredo/lsst_issc/proposal.html))
+
+> Astrostatistics is an area in the broad field of astronomy particularly suited to hobbyists, since many data sets collected by professional instruments are available for public use. Such files can be downloaded freely, and analyzed and processed on standard computers using open source software tools of professional quality. (source: [Astrostatistics.org](http://www.astrostatistics.org/home))
+
+***
+
+###Main Resources:
+
+* [Center for Astrostatistics](https://asaip.psu.edu/) and
+* [Astrostatistics and Astroinformatics Portal](https://asaip.psu.edu/) at Pennsylvania State University
+(serving the cross-disciplinary communities of astronomers, statisticians and computer scientists)
+
+* Book: [Modern Statistical Methods for Astronomy with R Applications](http://www.cambridge.org/us/academic/subjects/physics/astronomy-general/modern-statistical-methods-astronomy-r-applications?format=HB&isbn=9780521767279#contentsTabAnchor) (2012)
+
+***
+
+###Prospect for Amateur Astrostatistics:
+
+From [Astronomy.com](http://www.astronomy.com/news/2017/12/the-lsst-and-big-data-science), December 15, 2017:
+
+<center>
+####The LSST and big data science
+
+####A new kind of telescope will need a new kind of astronomer
+</center>
+
+
+"Construction of the [Large Synoptic Survey Telescope](https://www.lsst.org/) (LSST) in Chile will be the largest digital instrument ever built for ground-based astronomy and will take pictures fast enough to capture the entire southern sky every three nights. 
+
+The LSST will cement an age where software is as critical to astronomy as the telescope.
+
+> The LSST Education and Public Outreach (EPO) program is working to involve classrooms, citizen scientists and the general public as deeply in big data astronomy as they want (or dare) to go. 
+
+And, because more people will have ready access to those data, the biggest discoveries may come not only from the professionals, but from dedicated amateurs working at home on their laptops."
+
+***
